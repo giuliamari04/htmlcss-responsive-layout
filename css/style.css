@@ -32,7 +32,7 @@ a{
 
 .container{
     width: 100%;   /*ma anche un po' inutile perchè va in automatico al 100% */
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .col{
@@ -119,8 +119,16 @@ img{
     line-height: 1.5;
 }
 
+.underline{
+    text-decoration: underline;
+}
 h3{
-    font-size: 1.9em;
+    font-size: 2em;
+}
+
+h5{
+    font-size: 3em;
+    color: var(--color-contrast-color);
 }
 
 .uppercase{
