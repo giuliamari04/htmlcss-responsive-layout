@@ -35,6 +35,18 @@ a{
     padding: 5px;
 }
 
+.col{
+    padding: 10px;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+.card{
+   height: 100%;
+}
+
 /* **************************************************************
                         utility
 ************************************************************** */
@@ -144,12 +156,59 @@ header{
     color: var(--color-light-color);
 }
 
+#logo{
+    width: 70px;
+}
+nav{
+    align-items: center;
+    align-content: center;
+
+}
+.nav-flex{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+}
+
+nav ul{
+    display: none;
+}
+
+nav ul li{
+    padding: 6px 10px;
+}
+
+nav ul li:last-child{
+    padding: 0;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
 /* **************************************************************
                 main
 ************************************************************** */
 main{
     background-color: var(--color-light-color);
     color: var(--color-dark-color);
+    margin-top: 70px;
+}
+
+.card-image{
+    position: relative;
+    top: 20px;
+}
+
+.icon{
+    font-size: 3em;
+    color: var(--color-secondary-color);
+    margin: 10px;
 }
 
 /* **************************************************************
@@ -169,6 +228,26 @@ footer{
 ************************************************************** */
 
 @media screen and  (min-width: 576px) {
+    .d-flex{
+        width: 100%;
+        display: flex;   
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+
+    .align-stretch{
+        align-content: stretch;
+        align-items: stretch;
+    }
+
+    #intro .col{
+        width: calc(100%/3);
+    }
+
+    #intro .col:first-child{
+        width: calc(100%/3 *2);
+    }
     
 }
 
@@ -177,9 +256,23 @@ footer{
 }
 
 @media screen and  (min-width: 992px) {
-     
+    nav ul{
+        display: flex;
+    }
+
+    nav .fa-solid.fa-bars{
+        display: none;
+    }    
 }
 
 @media screen and  (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    #intro .col:first-child .card{
+        display: flex;
+    }
     
 }
