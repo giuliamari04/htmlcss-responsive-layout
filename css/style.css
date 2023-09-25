@@ -169,10 +169,16 @@ h2{
 
 /* margini */
 
+.margin-top-card{
+    margin-top: 200px;
+}
+
 .margin-top{
     margin-top: 20px;
 }
-
+.margin-bottom{
+    margin-bottom: 100px;
+}
 /* bottoni */
 
 .botton{
@@ -253,6 +259,9 @@ main{
 .card-image{
     position: relative;
     top: 20px;
+}
+.card-content{
+    width: 80%;
 }
 
 .icon{
@@ -401,10 +410,46 @@ footer{
     .container{
         max-width: 1140px;
         margin: 0 auto;
+       
     }
 
     #intro .col:first-child .card{
         display: flex;
+    }
+
+    #benefits .col{
+        width: calc(100%/3);
+
+    }
+
+    #call-to-action{
+        padding: 0 20%;
+    }
+
+    .container-immagini-tonde{
+        width: 25%;
+    }
+
+    .left{
+        text-align: left;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.col.margin-top-card{
+         width: calc(100% - 100px);
+        height: calc(100% - 100px);
+    }
+
+    div.card.bg-card-light.border-r-big.text-black.px-20.py-20{
+        width: 80%; 
+        height: 80%;
+   }
+
+    footer{
+        padding: 0 30%;
     }
     
 }
