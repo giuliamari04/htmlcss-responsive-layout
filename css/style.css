@@ -48,6 +48,13 @@ img{
    height: 100%;
 }
 
+.container-immagini-tonde{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    
+}
+
 
 
 /* **************************************************************
@@ -121,7 +128,7 @@ h3{
 }
 
 h2{
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 /* padding */
 
@@ -145,6 +152,7 @@ h2{
     padding-bottom: 20px;
 }
 
+
 /* margini */
 
 .margin-top{
@@ -154,7 +162,7 @@ h2{
 /* bottoni */
 
 .botton{
-    padding: 6px 10px;
+    padding: 6px 50px;
     display: inline-block;
     text-decoration: none;
     border-radius: 15px;
@@ -164,6 +172,11 @@ h2{
 
 .botton-card{
     background-color: var(--color-secondary-color);
+}
+
+.botton-white{
+    background-color: var(--color-light-color);
+    color: var(--color-primary-color);
 }
 
 
@@ -229,12 +242,7 @@ main{
     color: var(--color-secondary-color);
     margin: 10px;
 }
-.div-img-testimonials{ 
-    width: 50%;
-    height: 200px;
-    overflow: hidden;
-    margin: 0 auto;
-}
+
 .img-testimonials{
    width: 100%;
    height: 100%;
@@ -254,6 +262,20 @@ main{
     background-image: url(../img/testimonial3.jpg);
 }
 
+.testimonials4{
+    background-image: url(../img/about.jpg);
+}
+.container-virgolette{
+    position: relative;
+    width: 200px;
+}
+.virgolette{
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
 /* **************************************************************
                 footer
 ************************************************************** */
@@ -303,6 +325,9 @@ footer{
         width: calc(100%/2);
     }
 
+    #benefits .col{
+        width: calc(100%/3);
+    }
     
 }
 
