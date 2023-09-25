@@ -1,0 +1,185 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--color-secondary-color: #0084FD;
+	--color-dark-color: #333333;
+	--color-light-color: #FFFFFF;
+	--color-primary-color: #9792E4;
+	--color-bg-card: #B5DDFF;
+	--color-contrast-color: #FCC060;
+	--color-text: #424242;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* contenitori */
+
+.container{
+    width: 100%;   /*ma anche un po' inutile perchè va in automatico al 100% */
+    padding: 5px;
+}
+
+/* **************************************************************
+                        utility
+************************************************************** */
+/* bordi */
+
+.border-r-small{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.border-r-big{
+    border-radius: 20px;
+}
+
+.border-r-circle{
+    border-radius: 50%;
+}
+
+/* sfondi */
+
+.even{
+    background-color: var(--color-primary-color);
+        color: var(--color-light-color);
+}
+
+.bg-card-light{
+    background-color: var(--color-light-color); 
+}
+
+.bg-card-azul{
+    background-color: var(--color-bg-card); 
+}
+
+.bg-card-violet{
+    background-color: var(--color-primary-color);
+}
+
+/* testo */
+
+.text-light{
+    color: var(--color-light-color);
+}
+
+.text-azul{
+    color: var(--color-secondary-color);
+}
+
+.text-violet{
+    color: var(--color-light-color);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.line-height{
+    line-height: 1.5;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+/* padding */
+
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.px-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* bottoni */
+
+.botton{
+    padding: 6px 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: var(--color-primary-color);
+    color: var(--color-light-color);
+}
+
+.botton-card{
+    background-color: var(--color-secondary-color);
+}
+
+
+/* **************************************************************
+                header
+************************************************************** */
+header{
+    background-color: var(--color-secondary-color);
+    color: var(--color-light-color);
+}
+
+/* **************************************************************
+                main
+************************************************************** */
+main{
+    background-color: var(--color-light-color);
+    color: var(--color-dark-color);
+}
+
+/* **************************************************************
+                footer
+************************************************************** */
+footer{
+    background-color: var(--color-dark-color);
+    color: var(--color-light-color);
+}
+
+.debug{
+    border: 2px solid black;
+}
+
+/* **************************************************************
+                media query
+************************************************************** */
+
+@media screen and  (min-width: 576px) {
+    
+}
+
+@media screen and  (min-width: 768px) /* non molto utile --- uguale più o meno al 922px ma senza barra di scorrimento*/ {
+   
+}
+
+@media screen and  (min-width: 992px) {
+     
+}
+
+@media screen and  (min-width: 1200px) {
+    
+}
