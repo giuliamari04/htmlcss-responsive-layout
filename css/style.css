@@ -169,10 +169,6 @@ h2{
 
 /* margini */
 
-.margin-top-card{
-    margin-top: 200px;
-}
-
 .margin-top{
     margin-top: 20px;
 }
@@ -353,7 +349,7 @@ footer{
     }
 
     #benefits .col{
-        width: calc(100%/3);
+        width: calc(100%/2);
     }
     
 }
@@ -373,7 +369,8 @@ footer{
     }
 
     .container-immagini-tonde{
-        width: 33%;
+        width: 40%;
+
     }
 
     .line-height{
@@ -428,6 +425,10 @@ footer{
 
     .container-immagini-tonde{
         width: 25%;
+    }
+
+    .margin-top-card{
+        margin-top: 200px;
     }
 
     .left{
