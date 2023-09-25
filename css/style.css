@@ -33,6 +33,7 @@ a{
 .container{
     width: 100%;   /*ma anche un po' inutile perchè va in automatico al 100% */
     padding: 10px 20px;
+    
 }
 
 .col{
@@ -51,10 +52,14 @@ img{
 .container-immagini-tonde{
     width: 200px;
     height: 200px;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
+.container-immagini-tonde2{
+    width: 200px;
+    height: 200px;
+    overflow: hidden; 
+}
 
 
 /* **************************************************************
@@ -161,6 +166,7 @@ h2{
 }
 
 
+
 /* margini */
 
 .margin-top{
@@ -170,7 +176,7 @@ h2{
 /* bottoni */
 
 .botton{
-    padding: 6px 50px;
+    padding: 6px ;
     display: inline-block;
     text-decoration: none;
     border-radius: 15px;
@@ -178,6 +184,10 @@ h2{
     color: var(--color-light-color);
 }
 
+.px-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .botton-card{
     background-color: var(--color-secondary-color);
 }
@@ -340,17 +350,51 @@ footer{
 }
 
 @media screen and  (min-width: 768px) /* non molto utile --- uguale più o meno al 922px ma senza barra di scorrimento*/ {
+    #planning .col{
+        width:100%;  
+    }
+
+    #benefits .col{
+        width: calc(100%/2);
+    }
+
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-immagini-tonde{
+        width: 33%;
+    }
+
+    .line-height{
+        line-height: 2;
+    }
+
+    
    
 }
 
 @media screen and  (min-width: 992px) {
+    
     nav ul{
         display: flex;
     }
 
     nav .fa-solid.fa-bars{
         display: none;
-    }    
+    } 
+
+    .d-flex2{
+        width: 100%;
+        display: flex;   
+    }
+
+   
+
+    #planning .col{
+        width:100%;   
+    }
 }
 
 @media screen and  (min-width: 1200px) {
