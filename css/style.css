@@ -52,7 +52,9 @@ img{
 .container-immagini-tonde{
     width: 200px;
     height: 200px;
-    overflow: hidden; 
+    overflow: hidden;
+    margin: 0 auto 1rem;
+   
 }
 
 .container-immagini-tonde2{
@@ -336,6 +338,13 @@ footer{
         align-content: center;
     }
 
+    .container-immagini-tonde{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
     #intro .col{
         width: calc(100%/3);
     }
@@ -369,7 +378,7 @@ footer{
     }
 
     .container-immagini-tonde{
-        width: 40%;
+        width: 60%;
 
     }
 
